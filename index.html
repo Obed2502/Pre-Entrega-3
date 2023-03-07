@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerveceria Huaquero</title> 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="IMG/huaquero img.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Nosotros</a>
+            <a href="#">Cervezas</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Cervezas Artesanales</h1>
+            <h2>100% Peruanas</h2>
+        </section>
+        <div class="logo"><img src="IMG/huaquero img.png" alt=""></div>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path></svg></div>
+    </header>
+
+
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Nosotros</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img class="foto" src="IMG/cerveza.png" alt="">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Misión</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit corporis provident pariatur, iusto sunt ea facilis, corrupti delectus dolore quo possimus necessitatibus aliquam! Deserunt, quas voluptatem! Vel nostrum temporibus maiores.}</p>
+                    <h3><span>2</span>Visión</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit corporis provident pariatur, iusto sunt ea facilis, corrupti delectus dolore quo possimus necessitatibus aliquam! Deserunt, quas voluptatem! Vel nostrum temporibus maiores.}</p>               
+                </div>
+            </div>
+
+        </section>
+        <section class="cervezas">
+            <div class="contenedor">
+                <h2 class="titulo">Cervezas</h2>
+                <div class="galeria-cervezas">
+                    <div class="imagen-cerveza">
+                        <!-- <span class="titulo-item">Saison</span> -->
+                        <img src="IMG/saison .jpg" alt="">                     
+                        <div class="hover-galeria">
+                            <span class="precio-item">S/13.00</span>
+                            <img src="IMG/iconito.png" alt="">
+                            <p>Saison</p>
+                            <button class="boton-item">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="imagen-cerveza">
+                        <!-- <span class="titulo-item">Maracuyá</span> -->
+                        <img src="IMG/maracuya.jpg" alt="">
+                        <div class="hover-galeria">
+                            <span class="precio-item">S/15.00</span>   
+                            <img src="IMG/iconito.png" alt="">
+                            <p>Maracuyá</p>
+                            <button class="boton-item">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="imagen-cerveza">
+                        <!-- <span class="titulo-item">Golden Ale</span> -->                       
+                        <img src="IMG/golden ale.jpg">                       
+                        <div class="hover-galeria">
+                            <span class="precio-item">S/17.00</span>                           
+                            <img src="IMG/iconito.png" alt="">
+                            <p>Golden Ale</p>
+                            <button class="boton-item">Agregar al Carrito</button>
+                        </div>                      
+                    </div>                    
+                </div>
+            </div>
+
+            <!-- carrito de compras -->       
+            <div class="carrito">
+                <div class="header-carrito">
+                    <h2>Tu Carrito</h2>
+                </div>
+
+                <div class="carrito-items">
+                    <div class="carrito-item">
+                        <img src="IMG/saison.png" width="80px" alt="">
+                        <div class="carrito-item-detalles">
+                            <span class="carrito-item-titulo">Saison</span>
+                            <div class="selector-cantidad">
+                                <i class="fa-solid fa-minus restar-cantidad"></i>
+                                <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                                <i class="fa-solid fa-plus sumar-cantidad" ></i>
+                            </div>
+                            <span class="carrito-item-precio">S/13,00</span>
+                        </div>
+                        <span class="btn-eliminar">
+                            <i class="fa-solid fa-trash"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="carrito-items">
+                    <div class="carrito-item">
+                        <img src="IMG/maracuya.png" width="80px" alt="">
+                        <div class="carrito-item-detalles">
+                            <span class="carrito-item-titulo">Maracuyá</span>
+                            <div class="selector-cantidad">
+                                <i class="fa-solid fa-minus restar-cantidad"></i>
+                                <input type="text" value="2" class="carrito-item-cantidad" disabled>
+                                <i class="fa-solid fa-plus sumar-cantidad" ></i>
+                            </div>
+                            <span class="carrito-item-precio">S/15,00</span>
+                        </div>
+                        <span class="btn-eliminar">
+                            <i class="fa-solid fa-trash"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="carrito-items">
+                    <div class="carrito-item">
+                        <img src="IMG/golden ale.png" width="80px" alt="">
+                        <div class="carrito-item-detalles">
+                            <span class="carrito-item-titulo">Golden Ale</span>
+                            <div class="selector-cantidad">
+                                <i class="fa-solid fa-minus restar-cantidad"></i>
+                                <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                                <i class="fa-solid fa-plus sumar-cantidad" ></i>
+                            </div>
+                            <span class="carrito-item-precio">S/17,50</span>
+                        </div>
+                        <span class="btn-eliminar">
+                            <i class="fa-solid fa-trash"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="carrito-total">
+                    <div class="fila">
+                        <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+                        <strong>TOTAL</strong>
+                        <span class="carrito-precio-total">S/94,00</span>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+
+        </section> 
+
+        <!-- 3r contenedor  -->
+        <section class="contendor">
+            <div class="clientes-contendor">
+                <h2 class="titulo">Que dicen nuestros Clientes</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="IMG/cliente 1.jpg" alt="">
+                        <div class="contenido-texto-card">
+                             <h4>name</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, molestias?</p>
+                         </div>
+                    </div> 
+                    <div class="card">
+                        <img src="IMG/cliente 2.jpg" alt="">
+                        <div class="contenido-texto-card">
+                             <h4>name</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, molestias?</p>
+                         </div>
+                    </div> 
+                </div> 
+            </div>
+        </section> 
+    </main>
+    <!-- Pie de pagina -->
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Phone</h4>
+                <p>+51 996 526 512</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>cerveceria.huaquero@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Location</h4>
+                <p>007, Carabayllo</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy;Obed Cerna Design</h2>
+    </footer>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
