@@ -8,6 +8,47 @@ if(document.readyState == 'loading'){
     ready();
 }
 
+const productos = {
+    "cervezaSaison": [
+        {
+            "id": "1",
+            "name": "Saison" ,
+            "alcohol": "5%",
+            "precio": "13 Soles",
+            "cantidad": "350 mililitros"
+        }
+        
+    ],
+
+    "cervezaMaracuya": [
+        {
+            "id": "2",
+            "name": "Maracuyá" ,
+            "alcohol": "8%",
+            "precio": "15 Soles",
+            "cantidad": "350 mililitros"
+        }
+        
+    ],
+
+    "cervezaGoldenAle": [
+        {
+            "id": "3",
+            "name": "Golden Ale" ,
+            "alcohol": "10%",
+            "precio": "17 Soles",
+            "cantidad": "350 mililitros"
+        }
+        
+    ]
+}
+
+const guardarLocal = (clave, valor) => { localStorage.detItem(clave, valor)};
+for (const producto of productos) {
+    guardarLocal(producto.id, JSON.stringify(producto))
+}
+
+guardarLocal("listaProductos", JSON.stringify(productos));
 function ready(){
 
     let botonesEliminarItem = document.getElementsByClassName("btn-eliminar");
